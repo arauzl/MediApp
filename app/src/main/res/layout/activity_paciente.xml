@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PacienteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/frame_429__1_" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="15dp"
+            >
+            <ImageView
+                android:id="@+id/imagen_ficha_pac"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/frame_429"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/text_ficha_pac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Iván Cordero "
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Paciente actual"
+                    android:textAlignment="textStart"
+                    android:textSize="15sp"
+                    android:textColor="@color/cyan"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/text_ficha_ci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1310330558"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:id="@+id/text_ficha_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1310330558"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="15dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dividerColor="@color/gray"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            />
+
+        <TextView
+            android:id="@+id/text_ficha_edad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iván Cordero "
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edad"
+            android:layout_marginBottom="15dp"
+            android:textSize="15sp"
+            android:textColor="@color/cyan"
+            android:gravity="center"
+            />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dividerColor="@color/gray"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            />
+        <TextView
+            android:id="@+id/text_ficha_sexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masculino"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sexo"
+            android:layout_marginBottom="15dp"
+            android:textSize="15sp"
+            android:textColor="@color/cyan"
+            android:gravity="center"
+            />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dividerColor="@color/gray"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            />
+        <TextView
+            android:id="@+id/text_ficha_dir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sangolqui"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Direccion"
+            android:layout_marginBottom="15dp"
+            android:textSize="15sp"
+            android:textColor="@color/cyan"
+            android:gravity="center"
+            />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dividerColor="@color/gray"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            />
+        <TextView
+            android:id="@+id/text_ficha_fono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0999999999"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefono"
+            android:layout_marginBottom="15dp"
+            android:textSize="15sp"
+            android:textColor="@color/cyan"
+            android:gravity="center"
+            />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dividerColor="@color/gray"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            />
+        <TextView
+            android:id="@+id/text_ficha_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver ubicacion en map"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:gravity="center"
+
+            />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ir a mapa"
+            android:layout_marginBottom="15dp"
+            android:textSize="15sp"
+            android:textColor="@color/cyan"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/ficha_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VER FICHA MEDICA"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
