@@ -1,8 +1,10 @@
 package com.amoba.mediapp.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.Toast
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -26,6 +28,7 @@ class ListActivity : AppCompatActivity() {
     var adapter: PacienteAdapter? = null
     var respuesta: Respuesta? = null
     var userPrivider = UserProvder()
+    var btnOut: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,8 +37,22 @@ class ListActivity : AppCompatActivity() {
         recyclerPacientes = findViewById(R.id.recycle_pacientes)
         recyclerPacientes?.layoutManager = LinearLayoutManager(this)
 
+        btnOut = findViewById(R.id.cerrar_btn)
+        btnOut?.setOnClickListener { logout() }
+
         getSesion()
 
+
+    }
+
+    private fun logout() {
+        val sharedPref = SharedPref(this)
+
+        sharedPref?.remove("user")
+        sharedPref?.remove("token")
+
+        val i = Intent(this, MainActivity::class.java)
+        startActivity(i)
 
     }
 
